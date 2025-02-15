@@ -30,9 +30,9 @@ public class DataGenerator {
                 .spec(requestSpec)
                 .body(user)
                 .when()
-                .post("/api/register")  // Укажи правильный эндпоинт, если он отличается
+                .post("/api/system/users") // ✅ Используем правильный эндпоинт
                 .then()
-                .statusCode(200); // Исправленный вызов
+                .statusCode(200); // Ожидаем успешную регистрацию
 
         return user;
     }

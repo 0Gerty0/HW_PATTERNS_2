@@ -82,4 +82,3 @@ class AuthTest {
                 .shouldBe(Condition.visible);
     }
 }
-
