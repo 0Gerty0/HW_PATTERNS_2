@@ -24,7 +24,7 @@ jobs:
 
       # Шаг 4: Запуск SUT
       - name: Start SUT
-        run: java -jar ./artifacts/app-ibank.jar &
+        run: java -jar ./artifacts/app-ibank.jar -P:profile=test &
         # Здесь используется фоновый запуск (&), чтобы тесты могли выполняться параллельно
 
       # Шаг 5: Запуск автотестов
